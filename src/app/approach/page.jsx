@@ -1,45 +1,88 @@
 import React from "react";
 import MainHeading from "../component/ui/MainHeading";
-import Chart from "../component/Chart";
 import Image from "next/image";
 import line from "../../../public/images/Line.png";
+import Footer from "../component/Footer";
 
 const Page = () => {
-  const boxes = [
+  const philosophyPoints = [
     {
-      title: "contrarian insight",
-      desc: "we look for chances others miss — places where the story, not the facts, has pushed value out of sight.",
+      title: "Contrarian Insight",
+      desc: "We seek opportunities others overlook — where perception, not reality, has distorted value.",
     },
     {
-      title: "long-term focus",
-      desc: "we prioritize durable value creation over short-term volatility, staying patient when others are reactive.",
+      title: "Long-Term Focus",
+      desc: "We focus on enduring value creation over short-term noise, staying patient when others are reactive.",
     },
     {
-      title: "research discipline",
-      desc: "our process is rooted in rigorous, independent analysis — not market noise or consensus opinions.",
+      title: "Research Discipline",
+      desc: "Our process is grounded in deep, independent analysis — not consensus or market sentiment.",
     },
     {
-      title: "value conviction",
-      desc: "we invest with conviction when we find mispriced value, guided by deep understanding and discipline.",
+      title: "Value Conviction",
+      desc: "We act decisively when we find genuine mispricing, backed by discipline and understanding.",
+    },
+  ];
+
+  const researchSteps = [
+    {
+      title: "Market Screening",
+      desc: "Identifying sectors and businesses that are undervalued, underfollowed, or misunderstood.",
+    },
+    {
+      title: "Fundamental Research",
+      desc: "Conducting in-depth analysis of business models, management quality, and financial sustainability.",
+    },
+    {
+      title: "Valuation Assessment",
+      desc: "Estimating intrinsic value through disciplined financial modeling and comparative analysis.",
+    },
+    {
+      title: "Portfolio Construction",
+      desc: "Allocating capital selectively based on conviction, diversification, and long-term upside.",
+    },
+    {
+      title: "Portfolio Construction",
+      desc: "Allocating capital selectively based on conviction, diversification, and long-term upside.",
+    },
+  ];
+
+  const upside = [
+    {
+      title: "Margin of Safety",
+      desc: "Investing only where intrinsic value offers a significant buffer against downside risk.",
+    },
+    {
+      title: "Scenario Testing",
+      desc: "Every investment thesis is challenged through stress tests and alternative outcomes to ensure durability.",
+    },
+    {
+      title: "Concentrated but Resilient",
+      desc: "Position sizes are carefully structured to withstand volatility while maximizing asymmetric payoffs.",
+    },
+    {
+      title: "Long-Term Resilience",
+      desc: "We accept short-term noise, but avoid permanent capital impairment.",
     },
   ];
 
   return (
     <>
-      <div className="py-[150px] flex items-center justify-center px-6">
+      {/* Hero Section */}
+      <section className="py-[150px] flex items-center justify-center px-6">
         <div className="max-w-5xl text-center">
           <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
             Our Investment Philosophy
           </h1>
           <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed">
-            At Jomo Investments, we invest with patience and conviction,
-            targeting strong businesses trading below intrinsic value.
+            At Jomo Investments, we invest with patience and conviction —
+            focusing on strong businesses trading below their intrinsic value.
           </p>
         </div>
-      </div>
+      </section>
 
+      {/* Approach Section */}
       <div className="bg-[#F5F5F5] relative">
-        {/* Centered line image */}
         <div className="flex justify-center">
           <Image
             src={line}
@@ -54,38 +97,127 @@ const Page = () => {
           <div className="text-center max-w-5xl mx-auto">
             <MainHeading
               line1="our approach"
-              line2=""
               className="text-black text-[36px] sm:text-[48px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
             />
-            <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
-              we believe markets are often mispriced — not due to a lack of
-              information, but due to behavioral inefficiencies. our mandate is
-              to identify assets that are fundamentally undervalued,
-              underfollowed, or temporarily out of favor, and to capitalize on
-              those mispricings through rigorous research and disciplined
-              capital allocation.
+            <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto">
+              We believe markets are often mispriced — not from lack of
+              information, but from human behavior. Our goal is to uncover
+              fundamentally undervalued opportunities through deep research and
+              disciplined capital allocation.
             </p>
           </div>
 
-          {/* 4 Boxes Section */}
+          {/* Philosophy Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-            {boxes.map((box, index) => (
+            {philosophyPoints.map((point, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-[20px] hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between text-left"
+                className="bg-white p-8 rounded-[20px] border border-gray-200 hover:shadow-2xl transition-all duration-300 text-left"
               >
-                <h4 className="text-[24px] lg:text-[28px] font-ibmplex mb-3 text-black">
-                  {box.title}
+                <h4 className="text-[24px] lg:text-[28px] font-ibmplex mb-3 text-black capitalize">
+                  {point.title}
                 </h4>
-                <hr className="w-[150px] mb-3 border-black" />
+                <div className="w-[120px] h-[2px] bg-black mb-4" />
                 <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed">
-                  {box.desc}
+                  {point.desc}
                 </p>
               </div>
             ))}
           </div>
         </section>
       </div>
+      {/* Research Process Section */}
+      <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px] text-center bg-white">
+        <div className="flex flex-col justify-center items-center">
+          <MainHeading
+            line1="research & idea generation process"
+            className="text-black text-[36px] sm:text-[48px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
+          />
+          <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[70%] mx-auto">
+            Our framework transforms insight into conviction — structured,
+            disciplined, and repeatable.
+          </p>
+
+          {/* Research Steps */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-[60px]">
+            {researchSteps.map((step, index) => (
+              <div
+                key={index}
+                className="rounded-[16px] border border-dashed border-black overflow-hidden bg-white hover:shadow-lg transition-all duration-300"
+              >
+                <div className="bg-black py-4 px-1">
+                  <h4 className="text-[22px] lg:text-[25px] font-ibmplex text-white">
+                    {step.title}
+                  </h4>
+                </div>
+                <div className="p-2">
+                  <p className="text-black text-[14px] sm:text-[16px] lg:text-[18px] font-cutive leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F5F5F5] mx-auto px-6 py-[80px] sm:py-[180px] text-center">
+        <div className="flex flex-col justify-center items-center max-w-[1520px] mx-auto">
+          {/* Heading */}
+          <MainHeading
+            line1="Protecting downside,"
+            line2="unlocking upside."
+            className="text-black text-[36px] sm:text-[48px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
+          />
+
+          {/* Intro paragraph */}
+          <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed  mx-auto mb-[50px]">
+            Risk management is at the core of every decision. We believe that
+            capital preservation is the foundation of compounding. Our approach
+            emphasizes:
+          </p>
+
+          {/* 2-column grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full mb-[50px]">
+            {upside.map((step, index) => (
+              <div
+                key={index}
+                className="rounded-[16px] border border-black bg-white p-6 hover:shadow-lg transition-all duration-300 text-left"
+              >
+                <h4 className="text-[20px] lg:text-[22px] font-ibmplex text-black mb-3">
+                  {step.title}
+                </h4>
+                <p className="text-black text-[14px] sm:text-[16px] lg:text-[18px] font-cutive leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Closing paragraph */}
+          <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed mx-auto">
+            By focusing on resilience first, we position ourselves to capture
+            long-term upside without compromising on stability.
+          </p>
+        </div>
+      </section>
+      <div className="bg-white max-w-[1260px] rounded-[20px] p-4 absolute top-[2970px] left-[400px] z-10">
+        <div className="flex flex-row justify-between gap-30">
+          <div>
+            <MainHeading
+              line1="Investing with patience,"
+              line2="discipline, and conviction."
+              className="text-black text-[36px] sm:text-[48px] lg:text-[50px] font-ibmplex font-bold leading-[1.1]"
+            />
+          </div>
+          <div className="mt-[60px]">
+            <button className="bg-black text-white px-6 py-2.5 font-ibmplex text-[16px] sm:text-[18px] rounded-[10px] border border-transparent hover:bg-white hover:text-black hover:border-black transition-all duration-300">
+              explore more
+            </button>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };
