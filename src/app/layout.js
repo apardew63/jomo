@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cutive_Mono, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./component/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cutive = Cutive_Mono({
   subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-cutive",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-ibmplex",
+  display: "swap",
 });
 
 export const metadata = {
@@ -19,9 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${cutive.variable} ${ibmPlexMono.variable} antialiased`}>
+
+        <Navbar />
         {children}
       </body>
     </html>

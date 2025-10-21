@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -17,10 +17,61 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+/* globals.css */
+:root {
+  --font-cutive: var(--font-cutive);
+  --font-ibmplex: var(--font-ibmplex);
 }
+
+/* Example classes */
+.font-cutive {
+  font-family: var(--font-cutive), monospace;
+}
+
+.font-ibmplex {
+  font-family: var(--font-ibmplex), monospace;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ibmplex), monospace;
+}
+
+
+:root {
+  --primary-color: #c8dc71;
+  --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
+}
+
+
+.type {
+  color: #dbd56e;
+  background: -webkit-linear-gradient(25deg, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: type 1.5s steps(90) 1.5s 1 normal both, cursor 1s step-end infinite;
+  position: relative;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
