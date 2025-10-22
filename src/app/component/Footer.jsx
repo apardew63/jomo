@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="relative bg-black text-white">
+    <div className="relative bg-black text-white" data-aos="fade-up">
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
         {/* Heading */}
         <h1 className="text-[60px] sm:text-[70px] lg:text-[80px] font-bold font-ibmplex mb-10 text-center">

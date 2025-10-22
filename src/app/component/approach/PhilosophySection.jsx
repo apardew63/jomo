@@ -5,7 +5,7 @@ import line from "../../../../public/images/Line.png";
 
 const PhilosophySection = ({ philosophyPoints }) => {
   return (
-    <div className="bg-[#F5F5F5] relative">
+    <div className="bg-[#F5F5F5] relative" data-aos="fade-up">
       <div className="flex justify-center">
         <Image
           src={line}

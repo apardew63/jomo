@@ -3,7 +3,7 @@ import MainHeading from "../ui/MainHeading";
 
 const CallToAction = () => {
   return (
-    <div className="bg-white max-sm:hidden max-w-[calc(100vw-2rem)] md:max-w-[1260px] rounded-[20px] p-4 absolute top-[2970px] left-4 md:left-[400px] z-10">
+    <div data-aos="fade-up" className="bg-white max-sm:hidden max-w-[calc(100vw-2rem)] md:max-w-[1260px] rounded-[20px] p-4 absolute top-[2970px] left-4 md:left-[400px] z-10">
       <div className="flex flex-row justify-between gap-30">
         <div>
           <MainHeading

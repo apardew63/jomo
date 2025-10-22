@@ -10,7 +10,7 @@ const Insight = () => {
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
         <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-12 max-sm:text-left">
           {/* Left Column (Text) */}
-          <div className="w-full text-center lg:text-left">
+          <div className="w-full text-center lg:text-left" data-aos="fade-right">
             <div className="flex items-center justify-center gap-4 mb-5">
               <Image src={line2} alt="decorative line" />
               <div>
@@ -64,7 +64,7 @@ const Insight = () => {
           </div>
 
           {/* Right Column (Chart) */}
-          <div className="w-full flex justify-center mt-10 lg:mt-0">
+          <div className="w-full flex justify-center mt-10 lg:mt-0" data-aos="fade-left">
             <Image src={insight} />
           </div>
         </div>

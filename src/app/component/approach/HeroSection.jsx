@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="py-[150px] flex items-center justify-center px-6">
+    <section className="py-[150px] flex items-center justify-center px-6" data-aos="fade-up">
       <div className="max-w-5xl text-center">
         <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
           Our Investment Philosophy

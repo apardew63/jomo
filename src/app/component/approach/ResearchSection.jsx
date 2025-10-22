@@ -3,7 +3,7 @@ import MainHeading from "../ui/MainHeading";
 
 const ResearchSection = ({ researchSteps }) => {
   return (
-    <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px] text-center bg-white">
+    <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px] text-center bg-white" data-aos="fade-up">
       <div className="flex flex-col justify-center items-center">
         <MainHeading
           line1="research & idea generation process"

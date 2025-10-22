@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto">
+      <section className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto" data-aos="fade-up">
         <div className="max-w-5xl text-center">
           <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
             Our Team
@@ -33,7 +33,7 @@ const Page = () => {
       </section>
 
       {/* Team Section */}
-      <section className="bg-[#F5F5F5] py-[150px]">
+      <section className="bg-[#F5F5F5] py-[150px]" data-aos="fade-up">
         <div className="max-w-[1520px] mx-auto px-6 flex flex-col items-center justify-center">
           {/* First row: 4 cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-full mb-[80px]">

@@ -21,7 +21,7 @@ const Portfolio = () => {
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
         <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-12">
           {/* Left Column (Text) */}
-          <div className="w-full text-center lg:text-left">
+          <div className="w-full text-center lg:text-left" data-aos="fade-right">
             <MainHeading
               line1="our portfolio"
               line2="performance"
@@ -42,7 +42,7 @@ const Portfolio = () => {
           </div>
 
           {/* Right Column (Chart) */}
-          <div className="w-full flex justify-center mt-10 lg:mt-0">
+          <div className="w-full flex justify-center mt-10 lg:mt-0" data-aos="fade-left">
             <Chart />
           </div>
         </div>
