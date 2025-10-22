@@ -11,11 +11,11 @@ const FirmOverview = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] items-center gap-12">
           {/* Left Column (Text) */}
           <div className="w-full text-center lg:text-left">
-            <h1 className="text-[60px] font-bold leading-tight text-black font-ibmplex">
+            <h1 className="text-[60px] max-sm:text-[50px] font-bold leading-tight text-black font-ibmplex max-sm:text-left">
               firm overview
             </h1>
 
-            <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed mx-auto lg:mx-0">
+            <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed mx-auto lg:mx-0 max-sm:text-left">
               Founded by professionals with backgrounds in asset management and
               fundamental research, jomo investments operate with the singular
               goal of compounding capital through uncommon insight and
@@ -23,7 +23,7 @@ const FirmOverview = () => {
               and a deep appreciation for risk asymmetry.
             </p>
 
-            <div className="mt-6 sm:mt-8">
+            <div className="mt-6 sm:mt-8 max-sm:text-left">
               <button className="bg-black text-white px-6 py-2.5 font-ibmplex text-[16px] sm:text-[18px] rounded-[10px] border border-transparent hover:bg-white hover:text-black hover:border-black transition-all duration-300">
                 info@jomoinvestments.com
               </button>

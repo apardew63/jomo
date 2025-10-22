@@ -1,6 +1,6 @@
 import { Cutive_Mono, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./component/Navbar";
+import ClientLayout from "./ClientLayout";
 
 const cutive = Cutive_Mono({
   subsets: ["latin"],
@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${cutive.variable} ${ibmPlexMono.variable} antialiased`}>
-
-        <Navbar />
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );

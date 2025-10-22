@@ -8,16 +8,16 @@ const Insight = () => {
   return (
     <div className="relative">
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
-        <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-12 max-sm:text-left">
           {/* Left Column (Text) */}
           <div className="w-full text-center lg:text-left">
             <div className="flex items-center justify-center gap-4 mb-5">
               <Image src={line2} alt="decorative line" />
               <div>
-                <h1 className="text-[60px] font-bold leading-tight text-black font-ibmplex">
+                <h1 className="text-[60px] font-bold leading-tight text-black font-ibmplex max-sm:text-left max-sm:text-[50px]">
                 insight & research
               </h1>
-              <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[100%] mx-auto lg:mx-0">
+              <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-sm:text-left mx-auto lg:mx-0">
               to provide investors with a view into our thinking, process, and
               case studies — reinforcing our research-driven and long-term
               orientation.
@@ -32,11 +32,11 @@ const Insight = () => {
             </p> */}
 
             <div>
-              <h4 className="text-black font-ibmplex text-[25px] mb-4">
+              <h4 className="text-black font-ibmplex text-[25px] mb-4 max-sm:text-left">
                 sample post titles:
               </h4>
 
-              <ul className="space-y-3">
+              <ul className="space-y-3 max-sm:text-left">
                 <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
                   <ArrowRight size={22} className="text-black" />
                   “on being early: patience as alpha”
@@ -55,7 +55,7 @@ const Insight = () => {
             </div>
 
             <div className="mt-6 sm:mt-8">
-              <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
+              <p className="text-black max-sm:text-left text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
                 each article should be written in a memo-like tone: serious,
                 data-informed, and focused on decision-making rationale — not
                 market commentary.
