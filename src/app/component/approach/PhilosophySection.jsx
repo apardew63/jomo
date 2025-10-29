@@ -20,9 +20,9 @@ const PhilosophySection = ({ philosophyPoints }) => {
         <div className="text-center max-w-5xl mx-auto">
           <MainHeading
             line1="our approach"
-            className="text-black text-[36px] sm:text-[48px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
+            className="text-black text-[36px] max-sm:text-[40px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
           />
-          <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto">
+          <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto">
             We believe markets are often mispriced — not from lack of
             information, but from human behavior. Our goal is to uncover
             fundamentally undervalued opportunities through deep research and

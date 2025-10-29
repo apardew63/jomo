@@ -11,11 +11,11 @@ const FirmOverview = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] items-center gap-12">
           {/* Left Column (Text) */}
           <div className="w-full text-center lg:text-left" data-aos="fade-right">
-            <h1 className="text-[60px] max-sm:text-[50px] font-bold leading-tight text-black font-ibmplex max-sm:text-left">
+            <h1 className="text-[60px] max-sm:text-[40px] font-bold leading-tight text-black font-ibmplex max-sm:text-left">
               firm overview
             </h1>
 
-            <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed mx-auto lg:mx-0 max-sm:text-left">
+            <p className="text-black text-[20px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed mx-auto lg:mx-0 max-sm:text-left">
               Founded by professionals with backgrounds in asset management and
               fundamental research, jomo investments operate with the singular
               goal of compounding capital through uncommon insight and
@@ -38,17 +38,17 @@ const FirmOverview = () => {
               </h4>
 
               <ul className="space-y-6">
-                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                <li className="flex items-center gap-3 text-[18px] max-sm:text-[15px] text-black font-cutive">
                   <ArrowRight size={22} className="text-black" />
                   “on being early: patience as alpha”
                 </li>
 
-                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                <li className="flex items-center gap-3 text-[18px] max-sm:text-[15px] text-black font-cutive">
                   <ArrowRight size={22} className="text-black" />
                   “Opportunity lies at the intersection of mispricing and conviction.”
                 </li>
 
-                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                <li className="flex items-center gap-3 text-[18px] max-sm:text-[15px] text-black font-cutive">
                   <ArrowRight size={22} className="text-black" />
                   “Noise is constant. judgment is rare. we invest in the latter.”
                 </li>

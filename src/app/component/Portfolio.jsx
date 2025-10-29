@@ -25,10 +25,10 @@ const Portfolio = () => {
             <MainHeading
               line1="our portfolio"
               line2="performance"
-              className="text-black text-[50px] sm:text-[50px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8 max-sm:text-left"
+              className="text-black text-[50px] max-sm:text-[40px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8 max-sm:text-left"
             />
 
-            <p className="text-black text-[16px] sm:text-[18px] max-sm:text-left lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
+            <p className="text-black text-[16px] max-sm:text-[15px] max-sm:text-left lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
               jomo investments is a contrarian investment firm focused on
               identifying fundamentally strong yet overlooked opportunities.
               with a long-term, high-conviction approach.

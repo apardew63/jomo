@@ -22,17 +22,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-black backdrop-blur-md border-b border-black-200">
-      <div className="max-w-[1520px] mx-auto px-6 py-[30px] flex items-center justify-between">
+    <nav className="w-full  bg-black backdrop-blur-md border-b border-black-200">
+      <div className="max-w-[1520px] mx-auto px-4 md:px-6 py-[30px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-semibold text-[30px] text-white type">
+          <span className="font-semibold text-xl md:text-[30px] text-white type">
             jomo investment
           </span>
         </Link>
 
         {/* Desktop Links + Button */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-4 md:space-x-8">
           {navLinks.map((link) =>
             link.label === "journal" ? (
               <div
@@ -84,7 +84,7 @@ const Navbar = () => {
           {/* Contact Us Button */}
           <Link
             href="/contact"
-            className="ml-4 flex items-center gap-2 border bg-white border-white text-black px-4 py-2 rounded-[10px] hover:bg-black hover:text-white transition-all duration-300 font-ibmplex"
+            className="ml-2 md:ml-4 flex items-center gap-2 border bg-white border-white text-black px-3 md:px-4 py-2 rounded-[10px] hover:bg-black hover:text-white transition-all duration-300 font-ibmplex text-sm md:text-base"
           >
             contact us
             <Phone size={18} />
@@ -93,7 +93,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white mr-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

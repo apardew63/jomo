@@ -13,7 +13,7 @@ const RiskSection = ({ upside }) => {
         />
 
         {/* Intro paragraph */}
-        <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed  mx-auto mb-[50px]">
+        <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed  mx-auto mb-[50px]">
           Risk management is at the core of every decision. We believe that
           capital preservation is the foundation of compounding. Our approach
           emphasizes:

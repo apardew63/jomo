@@ -23,10 +23,10 @@ const Page = () => {
       {/* Hero Section */}
       <section className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto" data-aos="fade-up">
         <div className="max-w-5xl text-center">
-          <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
+          <h1 className="text-[40px] sm:text-[50px] max-sm:text-[40px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
             Our Team
           </h1>
-          <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[70%] mx-auto">
+          <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[70%] max-sm:max-w-[100%] mx-auto">
             A team of disciplined investors driven by research, patience, and conviction.
           </p>
         </div>

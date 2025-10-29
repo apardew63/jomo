@@ -7,9 +7,9 @@ const ResearchSection = ({ researchSteps }) => {
       <div className="flex flex-col justify-center items-center">
         <MainHeading
           line1="research & idea generation process"
-          className="text-black text-[36px] sm:text-[48px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
+          className="text-black text-[36px] sm:text-[48px] max-sm:text-[40px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
         />
-        <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[70%] mx-auto">
+        <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[100%] mx-auto">
           Our framework transforms insight into conviction — structured,
           disciplined, and repeatable.
         </p>

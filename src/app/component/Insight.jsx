@@ -14,10 +14,10 @@ const Insight = () => {
             <div className="flex items-center justify-center gap-4 mb-5">
               <Image src={line2} alt="decorative line" />
               <div>
-                <h1 className="text-[60px] font-bold leading-tight text-black font-ibmplex max-sm:text-left max-sm:text-[50px]">
+                <h1 className="text-[60px] font-bold leading-tight text-black font-ibmplex max-sm:text-left max-sm:text-[40px]">
                 insight & research
               </h1>
-              <p className="text-black text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-sm:text-left mx-auto lg:mx-0">
+              <p className="text-black text-[20px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-sm:text-left mx-auto lg:mx-0">
               to provide investors with a view into our thinking, process, and
               case studies — reinforcing our research-driven and long-term
               orientation.
@@ -55,7 +55,7 @@ const Insight = () => {
             </div>
 
             <div className="mt-6 sm:mt-8">
-              <p className="text-black max-sm:text-left text-[16px] sm:text-[18px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
+              <p className="text-black max-sm:text-left text-[20px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
                 each article should be written in a memo-like tone: serious,
                 data-informed, and focused on decision-making rationale — not
                 market commentary.

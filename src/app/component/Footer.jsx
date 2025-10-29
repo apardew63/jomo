@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="relative bg-black text-white" data-aos="fade-up">
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
         {/* Heading */}
-        <h1 className="text-[60px] sm:text-[70px] lg:text-[80px] font-bold font-ibmplex mb-10 text-center">
+        <h1 className="text-[60px] sm:text-[70px] lg:text-[80px] max-sm:text-[50px] font-bold font-ibmplex mb-10 text-center">
           jomo investment
         </h1>
 
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Disclaimer */}
           <div className="max-w-[600px]">
-            <p className="text-[16px] sm:text-[18px] font-ibmplex text-right leading-relaxed text-gray-300">
+            <p className="text-[16px] max-sm:text-[15px] max-sm:text-left font-ibmplex text-right leading-relaxed text-gray-300">
               Content on the website represents research-based analysis and
               should not be construed as investment advice. Past performance
               does not guarantee future results.
