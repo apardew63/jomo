@@ -74,7 +74,7 @@ const Page = () => {
       <PhilosophySection philosophyPoints={philosophyPoints} />
       <ResearchSection researchSteps={researchSteps} />
       <RiskSection upside={upside} />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <Footer />
     </div>
   );

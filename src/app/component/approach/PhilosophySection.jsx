@@ -2,6 +2,7 @@ import React from "react";
 import MainHeading from "../ui/MainHeading";
 import Image from "next/image";
 import line from "../../../../public/images/Line.png";
+import { ArrowRight } from "lucide-react";
 
 const PhilosophySection = ({ philosophyPoints }) => {
   return (
@@ -23,15 +24,40 @@ const PhilosophySection = ({ philosophyPoints }) => {
             className="text-black text-[36px] max-sm:text-[40px] lg:text-[60px] font-ibmplex font-bold leading-[1.1] mb-6 sm:mb-8"
           />
           <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto">
-            We believe markets are often mispriced — not from lack of
-            information, but from human behavior. Our goal is to uncover
-            fundamentally undervalued opportunities through deep research and
-            disciplined capital allocation.
+            we investwith patience and conviction, targeting strong businesses
+            trading below intrinsic value
           </p>
         </div>
 
+        <div className="text-center flex justify-center mt-5">
+          <ul className="space-y-5 max-sm:text-left mt-5">
+            <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+              <ArrowRight size={22} className="text-black" />
+              identified SMR in 2023 at $___, trading at ____as of September
+              2025
+            </li>
+
+            <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+              <ArrowRight size={22} className="text-black" />
+              identified SMR in 2023 at $___, trading at ____as of September
+              2025
+            </li>
+
+            <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+              <ArrowRight size={22} className="text-black" />
+              identified SMR in 2023 at $___, trading at ____as of September
+              2025
+            </li>
+            <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+              <ArrowRight size={22} className="text-black" />
+              identified SMR in 2023 at $___, trading at ____as of September
+              2025
+            </li>
+          </ul>
+        </div>
+
         {/* Philosophy Boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {philosophyPoints.map((point, index) => (
             <div
               key={index}
@@ -46,7 +72,7 @@ const PhilosophySection = ({ philosophyPoints }) => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     </div>
   );

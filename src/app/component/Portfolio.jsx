@@ -3,6 +3,7 @@ import MainHeading from "./ui/MainHeading";
 import Chart from "./Chart";
 import Image from "next/image";
 import line from "../../../public/images/Line.png";
+import { ArrowRight } from "lucide-react";
 
 const Portfolio = () => {
   return (
@@ -21,7 +22,10 @@ const Portfolio = () => {
       <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
         <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-12">
           {/* Left Column (Text) */}
-          <div className="w-full text-center lg:text-left" data-aos="fade-right">
+          <div
+            className="w-full text-center lg:text-left"
+            data-aos="fade-right"
+          >
             <MainHeading
               line1="our portfolio"
               line2="performance"
@@ -29,10 +33,35 @@ const Portfolio = () => {
             />
 
             <p className="text-black text-[16px] max-sm:text-[15px] max-sm:text-left lg:text-[20px] font-cutive leading-relaxed max-w-[95%] mx-auto lg:mx-0">
-              jomo investments is a contrarian investment firm focused on
-              identifying fundamentally strong yet overlooked opportunities.
-              with a long-term, high-conviction approach.
+              provide investors with a view into our thinking, process, and case
+              studies —reinforcing our research-driven and long-term
+              orientation.
             </p>
+
+            {/* <p className="mt-5 mb-5">identified SMR in 2023 at $___, trading at ____as of September 2025</p>
+            <p className="mt-5 mb-5">identified SMR in 2023 at $___, trading at ____as of September 2025</p>
+            <p className="mt-5 mb-5">identified SMR in 2023 at $___, trading at ____as of September 2025</p> */}
+{/* 
+            <ul className="space-y-3 max-sm:text-left mt-5">
+                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                  <ArrowRight size={22} className="text-black" />
+                  identified SMR in 2023 at $___, trading at ____as of September 2025
+                </li>
+
+                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                  <ArrowRight size={22} className="text-black" />
+                  identified SMR in 2023 at $___, trading at ____as of September 2025
+                </li>
+
+                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                  <ArrowRight size={22} className="text-black" />
+                  identified SMR in 2023 at $___, trading at ____as of September 2025
+                </li>
+                <li className="flex items-center gap-3 text-[18px] text-black font-cutive">
+                  <ArrowRight size={22} className="text-black" />
+                 identified SMR in 2023 at $___, trading at ____as of September 2025
+                </li>
+              </ul> */}
 
             <div className="mt-6 sm:mt-8 max-sm:text-left">
               <button className="bg-black text-white px-6 py-2.5 font-ibmplex text-[16px] sm:text-[18px] rounded-[10px] border border-transparent hover:bg-white hover:text-black hover:border-black transition-all duration-300">
@@ -42,7 +71,10 @@ const Portfolio = () => {
           </div>
 
           {/* Right Column (Chart) */}
-          <div className="w-full flex justify-center mt-10 lg:mt-0" data-aos="fade-left">
+          <div
+            className="w-full flex justify-center mt-10 lg:mt-0"
+            data-aos="fade-left"
+          >
             <Chart />
           </div>
         </div>

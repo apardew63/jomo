@@ -5,7 +5,10 @@ import heroBg from "../../../public/images/herobg.png";
 
 const Hero = () => {
   return (
-    <section className="max-w-[1520px] mx-auto px-6 py-[220px] max-sm:py-[50px] items-center justify-between" data-aos="fade-up">
+    <section
+      className="max-w-[1520px] mx-auto px-6 py-[220px] max-sm:py-[50px] items-center justify-between"
+      data-aos="fade-up"
+    >
       {/* Heading */}
       <MainHeading
         line1="we allocate"
@@ -17,11 +20,9 @@ const Hero = () => {
         {/* Left column – text */}
         <div className="w-full lg:w-[50%] flex items-center">
           <p className="text-black text-[20px] font-cutive leading-relaxed max-sm:text-[15px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse.
+            jomo investments is a contrarian investment firm focused on
+            identifying fundamentally strong yet overlooked opportunities. with
+            a long-term, high-conviction approach.
           </p>
         </div>
 

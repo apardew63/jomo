@@ -22,7 +22,7 @@ const ResearchSection = ({ researchSteps }) => {
               className="rounded-[16px] border border-dashed border-black overflow-hidden bg-white hover:shadow-lg transition-all duration-300"
             >
               <div className="bg-black py-4 px-1">
-                <h4 className="text-[22px] lg:text-[25px] font-ibmplex text-white">
+                <h4 className="text-[22px] lg:text-[30px] font-ibmplex text-white">
                   {step.title}
                 </h4>
               </div>

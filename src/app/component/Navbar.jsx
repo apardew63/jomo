@@ -16,9 +16,10 @@ const Navbar = () => {
   ];
 
   const journalDropdown = [
-    { href: "/journal/insights", label: "insights" },
-    { href: "/journal/research", label: "research" },
-    { href: "/journal/news", label: "news" },
+    { href: "#", label: "psx" },
+    { href: "/journal/usa", label: "usa" },
+    { href: "/journal/global", label: "global" },
+    { href: "/journal/commodities", label: "commodities" },
   ];
 
   return (
@@ -27,7 +28,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <span className="font-semibold text-xl md:text-[30px] text-white type">
-            jomo investment
+            jomo investments
           </span>
         </Link>
 

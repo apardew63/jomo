@@ -10,25 +10,58 @@ import Footer from "../component/Footer";
 
 const Page = () => {
   const teamMembers = [
-    { name: "Jane Cooper", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.", image: user1 },
-    { name: "John Smith", desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.", image: user2 },
-    { name: "Emily Davis", desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.", image: user3 },
-    { name: "Michael Lee", desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.", image: user4 },
-    { name: "Sarah Wilson", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.", image: user5 },
-    { name: "David Brown", desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.", image: user6 },
+    {
+      name: "adil anwar",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      image: user1,
+    },
+    {
+      name: "abeer muhammad",
+      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+      image: user2,
+    },
+    {
+      name: "ashir",
+      desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      image: user3,
+    },
+    {
+      name: "fizza nadeem siddiqui",
+      desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
+      image: user4,
+    },
+    {
+      name: "murtaza nazir tunio",
+      desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.",
+      image: user2,
+    },
   ];
 
   return (
     <>
       {/* Hero Section */}
-      <section className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto" data-aos="fade-up">
-        <div className="max-w-5xl text-center">
-          <h1 className="text-[40px] sm:text-[50px] max-sm:text-[40px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
-            Our Team
-          </h1>
-          <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[70%] max-sm:max-w-[100%] mx-auto">
-            A team of disciplined investors driven by research, patience, and conviction.
-          </p>
+      <section
+        className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto"
+        data-aos="fade-up"
+      >
+        <div className="flex flex-col">
+          <div className="max-w-5xl text-center">
+            <h1 className="text-[40px] sm:text-[50px] max-sm:text-[40px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
+              firm overview
+            </h1>
+            <p className="text-black text-[16px] sm:text-[18px] max-sm:text-[15px] lg:text-[20px] font-cutive leading-relaxed max-w-[100%] max-sm:max-w-[100%] mx-auto">
+              founded by professionals with backgrounds in asset management and
+              fundamental research, jomo investments operatewith the singular
+              goal of compounding capital through uncommon insight and
+              behavioral discipline. we maintain an independent research process
+              and a deep appreciation for risk asymmetry.
+            </p>
+          </div>
+          <div className="mt-6 sm:mt-8 max-sm:text-left text-center">
+            <button className="bg-black text-white px-6 py-2.5 font-ibmplex text-[16px] sm:text-[18px] rounded-[10px] border border-transparent hover:bg-white hover:text-black hover:border-black transition-all duration-300">
+              info@jomoinvestments.com
+            </button>
+          </div>
         </div>
       </section>
 
