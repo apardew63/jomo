@@ -41,10 +41,10 @@ const Page = () => {
     <>
       {/* Hero Section */}
       <section
-        className="py-[150px] max-w-[1520px] flex items-center justify-center px-6 mx-auto"
+        className="py-[90px] max-w-[1660px] flex items-center justify-center px-6 mx-auto"
         data-aos="fade-up"
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center">
           <div className="max-w-5xl text-center">
             <h1 className="text-[40px] sm:text-[50px] max-sm:text-[40px] lg:text-[60px] font-bold leading-tight text-black font-ibmplex mb-6">
               firm overview
@@ -66,8 +66,8 @@ const Page = () => {
       </section>
 
       {/* Team Section */}
-      <section className="bg-[#F5F5F5] py-[150px]" data-aos="fade-up">
-        <div className="max-w-[1520px] mx-auto px-6 flex flex-col items-center justify-center">
+      <section className="bg-[#F5F5F5] py-[60px]" data-aos="fade-up">
+        <div className="max-w-[1660px] mx-auto px-6 flex flex-col items-center justify-center">
           {/* First row: 4 cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-full mb-[80px]">
             {teamMembers.slice(0, 4).map((member, index) => (
@@ -97,11 +97,11 @@ const Page = () => {
           </div>
 
           {/* Second row: 2 cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 w-full justify-center items-center">
             {teamMembers.slice(4).map((member, index) => (
               <div
                 key={index}
-                className="group flex flex-col items-center text-center p-4 transition-all duration-300"
+                className="group flex flex-col items-center text-center p-4 transition-all duration-300 justify-center"
               >
                 <div className="relative overflow-hidden">
                   <Image

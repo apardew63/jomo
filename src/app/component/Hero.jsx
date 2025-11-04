@@ -6,7 +6,7 @@ import heroBg from "../../../public/images/herobg.png";
 const Hero = () => {
   return (
     <section
-      className="max-w-[1520px] mx-auto px-6 py-[220px] max-sm:py-[50px] items-center justify-between"
+      className="max-w-[1660px] mx-auto px-6 py-[100px] max-sm:py-[50px] items-center justify-between"
       data-aos="fade-up"
     >
       {/* Heading */}

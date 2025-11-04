@@ -7,7 +7,7 @@ import line2 from "../../../public/images/Line3.png";
 const FirmOverview = () => {
   return (
     <div className="relative bg-[#F5F5F5]">
-      <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
+      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[80px]">
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] items-center gap-12">
           {/* Left Column (Text) */}
           <div className="w-full text-center lg:text-left" data-aos="fade-right">

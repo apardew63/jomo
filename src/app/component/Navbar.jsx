@@ -23,8 +23,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full  bg-black backdrop-blur-md border-b border-black-200">
-      <div className="max-w-[1520px] mx-auto px-4 md:px-6 py-[30px] flex items-center justify-between">
+    <nav className="w-full  bg-black backdrop-blur-md border-b border-black-200 sticky top-0 z-50">
+      <div className="max-w-[1660px] mx-auto px-4 md:px-6 py-[30px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <span className="font-semibold text-xl md:text-[30px] text-white type">

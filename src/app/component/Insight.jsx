@@ -7,7 +7,7 @@ import line2 from "../../../public/images/Line3.png";
 const Insight = () => {
   return (
     <div className="relative">
-      <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
+      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[10px]">
         <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-12 max-sm:text-left">
           {/* Left Column (Text) */}
           <div

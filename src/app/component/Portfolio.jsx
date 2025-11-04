@@ -19,7 +19,7 @@ const Portfolio = () => {
         />
       </div>
 
-      <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px]">
+      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[60px]">
         <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-12">
           {/* Left Column (Text) */}
           <div

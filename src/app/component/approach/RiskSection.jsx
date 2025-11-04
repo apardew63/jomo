@@ -3,8 +3,8 @@ import MainHeading from "../ui/MainHeading";
 
 const RiskSection = ({ upside }) => {
   return (
-    <section className="bg-[#F5F5F5] mx-auto px-6 py-[80px] sm:py-[180px] text-center" data-aos="fade-up">
-      <div className="flex flex-col justify-center items-center max-w-[1520px] mx-auto">
+    <section className="bg-[#F5F5F5] mx-auto px-6 py-[60px] sm:py-[60px] text-center" data-aos="fade-up">
+      <div className="flex flex-col justify-center items-center max-w-[1660px] mx-auto">
         {/* Heading */}
         <MainHeading
           line1="Protecting downside,"

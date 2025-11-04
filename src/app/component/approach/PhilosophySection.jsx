@@ -17,7 +17,7 @@ const PhilosophySection = ({ philosophyPoints }) => {
         />
       </div>
 
-      <section className="max-w-[1520px] mx-auto px-6 py-[60px] sm:py-[80px] text-center">
+      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[80px] text-center">
         <div className="text-center max-w-5xl mx-auto">
           <MainHeading
             line1="our approach"
