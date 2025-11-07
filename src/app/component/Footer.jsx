@@ -6,12 +6,12 @@ import Link from "next/link";
 const Footer = () => {
     const links = [
     { href: "/", label: "home" },
-    { href: "/about", label: "about" },
-    { href: "/journal", label: "journal" },
+    { href: "#", label: "about" },
+    { href: "#", label: "journal" },
     { href: "/approach", label: "approach" },
-    { href: "/affiliation", label: "affiliation" },
-    { href: "/regulatorydisclosures", label: "regulatory disclosures" },
-    { href: "/privacypolicy", label: "privacy policy" },
+    { href: "#", label: "affiliation" },
+    { href: "#", label: "regulatory disclosures" },
+    { href: "#", label: "privacy policy" },
 
   ];
 

@@ -1,7 +1,7 @@
 import React from "react";
 import MainHeading from "./ui/MainHeading";
 import Image from "next/image";
-import heroBg from "../../../public/images/herobg.png";
+import heroBg from "../../../public/images/hero.gif";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
 
         {/* Right column – image */}
-        <div className="w-full lg:w-[60%] flex justify-center items-center">
+        <div className="w-full lg:w-[60%] flex justify-center items-center h-[500px]">
           <Image
             src={heroBg}
             alt="hero bg"

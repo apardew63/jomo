@@ -1,13 +1,14 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import insight from "../../../public/images/insight.png";
+import insight from "../../../public/images/insight.gif";
 import line2 from "../../../public/images/Line3.png";
 
 const Insight = () => {
   return (
     <div className="relative">
-      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[10px]">
+      <section className="max-w-[1660px] mx-auto px-6 py-[60px] sm:py-[100px]">
         <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-12 max-sm:text-left">
           {/* Left Column (Text) */}
           <div
@@ -75,7 +76,16 @@ const Insight = () => {
             className="w-full flex justify-center mt-10 lg:mt-0"
             data-aos="fade-left"
           >
-            <Image src={insight} />
+             <Image
+              src={insight}
+              alt="Insight Image"
+              className="w-full h-auto"
+            /> 
+             {/* <Lottie 
+        animationData={insight2} 
+        loop={true} 
+        className="w-[800px] h-[600px]" 
+      /> */}
           </div>
         </div>
       </section>

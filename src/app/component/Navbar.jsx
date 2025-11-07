@@ -11,8 +11,8 @@ const Navbar = () => {
     { href: "/", label: "home" },
     { href: "/approach", label: "approach" },
     { href: "/team", label: "team" },
-    { href: "/journal", label: "journal" },
-    { href: "/affiliation", label: "affiliation" },
+    { href: "#", label: "journal" },
+    { href: "#", label: "affiliation" },
   ];
 
   const journalDropdown = [
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           {/* Contact Us Button */}
           <Link
-            href="/contact"
+            href="#"
             className="ml-2 md:ml-4 flex items-center gap-2 border bg-white border-white text-black px-3 md:px-4 py-2 rounded-[10px] hover:bg-black hover:text-white transition-all duration-300 font-ibmplex text-sm md:text-base"
           >
             contact us
